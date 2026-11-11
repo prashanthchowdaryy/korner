@@ -1,0 +1,308 @@
+[
+  {
+    "id": "antique-brass-cup-on-wooden-table",
+    "name": "Antique Brass Cup on Wooden Table",
+    "category": "brass-metal",
+    "price": 0,
+    "image": "/images/antique-brass-cup-on-wooden-table.jpg",
+    "description": "Antique Brass Cup on Wooden Table, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": true
+  },
+  {
+    "id": "antique-wooden-tray-stack-01",
+    "name": "Antique Wooden Tray Stack – Style 1",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/antique-wooden-tray-stack-01.jpg",
+    "description": "Antique Wooden Tray Stack, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": true
+  },
+  {
+    "id": "antique-wooden-tray-stack-02",
+    "name": "Antique Wooden Tray Stack – Style 2",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/antique-wooden-tray-stack-02.jpg",
+    "description": "Antique Wooden Tray Stack, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "carved-wooden-coffee-table-set",
+    "name": "Carved Wooden Coffee Table Set",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/carved-wooden-coffee-table-set.jpg",
+    "description": "Carved Wooden Coffee Table Set, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": true
+  },
+  {
+    "id": "carved-wooden-console-table-01",
+    "name": "Carved Wooden Console Table – Style 1",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/carved-wooden-console-table-01.jpg",
+    "description": "Carved Wooden Console Table, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "carved-wooden-console-table-02",
+    "name": "Carved Wooden Console Table – Style 2",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/carved-wooden-console-table-02.jpg",
+    "description": "Carved Wooden Console Table, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "carved-wooden-console-table-03",
+    "name": "Carved Wooden Console Table – Style 3",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/carved-wooden-console-table-03.jpg",
+    "description": "Carved Wooden Console Table, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "carved-wooden-panels-01",
+    "name": "Carved Wooden Panels – Style 1",
+    "category": "home-decor",
+    "price": 0,
+    "image": "/images/carved-wooden-panels-01.jpg",
+    "description": "Carved Wooden Panels, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": true
+  },
+  {
+    "id": "carved-wooden-panels-02",
+    "name": "Carved Wooden Panels – Style 2",
+    "category": "home-decor",
+    "price": 0,
+    "image": "/images/carved-wooden-panels-02.jpg",
+    "description": "Carved Wooden Panels, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "carved-wooden-storage-box",
+    "name": "Carved Wooden Storage Box",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/carved-wooden-storage-box.jpg",
+    "description": "Carved Wooden Storage Box, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "carved-wooden-storage-box-display",
+    "name": "Carved Wooden Storage Box Display",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/carved-wooden-storage-box-display.jpg",
+    "description": "Carved Wooden Storage Box Display, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "carved-wooden-tabletop-panel",
+    "name": "Carved Wooden Tabletop Panel",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/carved-wooden-tabletop-panel.jpg",
+    "description": "Carved Wooden Tabletop Panel, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "colourful-wooden-toy-cart",
+    "name": "Colourful Wooden Toy Cart",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/colourful-wooden-toy-cart.jpg",
+    "description": "Colourful Wooden Toy Cart, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "decorative-brass-cup-display",
+    "name": "Decorative Brass Cup Display",
+    "category": "brass-metal",
+    "price": 0,
+    "image": "/images/decorative-brass-cup-display.jpg",
+    "description": "Decorative Brass Cup Display, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "decorative-glass-bowl",
+    "name": "Decorative Glass Bowl",
+    "category": "home-decor",
+    "price": 0,
+    "image": "/images/decorative-glass-bowl.jpg",
+    "description": "Decorative Glass Bowl, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "decorative-table-lamp-and-clock-display",
+    "name": "Decorative Table Lamp and Clock Display",
+    "category": "home-decor",
+    "price": 0,
+    "image": "/images/decorative-table-lamp-and-clock-display.jpg",
+    "description": "Decorative Table Lamp and Clock Display, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "decorative-wooden-tray-product-image",
+    "name": "Decorative Wooden Tray Product Image",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/decorative-wooden-tray-product-image.jpg",
+    "description": "Decorative Wooden Tray Product Image, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "decorative-wooden-wall-plates-set-01",
+    "name": "Decorative Wooden Wall Plates Set – Style 1",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/decorative-wooden-wall-plates-set-01.jpg",
+    "description": "Decorative Wooden Wall Plates Set, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "decorative-wooden-wall-plates-set-02",
+    "name": "Decorative Wooden Wall Plates Set – Style 2",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/decorative-wooden-wall-plates-set-02.jpg",
+    "description": "Decorative Wooden Wall Plates Set, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "inlaid-wooden-tabletop-01",
+    "name": "Inlaid Wooden Tabletop – Style 1",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/inlaid-wooden-tabletop-01.jpg",
+    "description": "Inlaid Wooden Tabletop, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "inlaid-wooden-tabletop-02",
+    "name": "Inlaid Wooden Tabletop – Style 2",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/inlaid-wooden-tabletop-02.jpg",
+    "description": "Inlaid Wooden Tabletop, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "pair-of-wooden-goblets-product-cutout",
+    "name": "Pair of Wooden Goblets Product Cutout – Style 1",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/pair-of-wooden-goblets-product-cutout.jpg",
+    "description": "Pair of Wooden Goblets Product Cutout, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "pair-of-wooden-goblets-product-cutout-02",
+    "name": "Pair of Wooden Goblets Product Cutout – Style 2",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/pair-of-wooden-goblets-product-cutout-02.jpg",
+    "description": "Pair of Wooden Goblets Product Cutout, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "round-carved-wooden-stool-01",
+    "name": "Round Carved Wooden Stool – Style 1",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/round-carved-wooden-stool-01.jpg",
+    "description": "Round Carved Wooden Stool, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "round-carved-wooden-stool-02",
+    "name": "Round Carved Wooden Stool – Style 2",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/round-carved-wooden-stool-02.jpg",
+    "description": "Round Carved Wooden Stool, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "round-carved-wooden-stool-03",
+    "name": "Round Carved Wooden Stool – Style 3",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/round-carved-wooden-stool-03.jpg",
+    "description": "Round Carved Wooden Stool, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "round-wooden-bowls-set",
+    "name": "Round Wooden Bowls Set",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/round-wooden-bowls-set.jpg",
+    "description": "Round Wooden Bowls Set, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "set-of-carved-wooden-coasters",
+    "name": "Set of Carved Wooden Coasters",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/set-of-carved-wooden-coasters.jpg",
+    "description": "Set of Carved Wooden Coasters, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "set-of-colourful-wooden-coasters",
+    "name": "Set of Colourful Wooden Coasters",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/set-of-colourful-wooden-coasters.jpg",
+    "description": "Set of Colourful Wooden Coasters, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "traditional-wooden-side-tables-set",
+    "name": "Traditional Wooden Side Tables Set",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/traditional-wooden-side-tables-set.jpg",
+    "description": "Traditional Wooden Side Tables Set, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "traditional-wooden-wall-shelf-display",
+    "name": "Traditional Wooden Wall Shelf Display",
+    "category": "home-decor",
+    "price": 0,
+    "image": "/images/traditional-wooden-wall-shelf-display.jpg",
+    "description": "Traditional Wooden Wall Shelf Display, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "upholstered-wooden-sofa-bench",
+    "name": "Upholstered Wooden Sofa Bench",
+    "category": "wooden-furniture",
+    "price": 0,
+    "image": "/images/upholstered-wooden-sofa-bench.jpg",
+    "description": "Upholstered Wooden Sofa Bench, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "wooden-goblet-product-cutout-01",
+    "name": "Wooden Goblet Product Cutout – Style 1",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/wooden-goblet-product-cutout-01.jpg",
+    "description": "Wooden Goblet Product Cutout, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  },
+  {
+    "id": "wooden-goblet-product-cutout-02",
+    "name": "Wooden Goblet Product Cutout – Style 2",
+    "category": "handicrafts",
+    "price": 0,
+    "image": "/images/wooden-goblet-product-cutout-02.jpg",
+    "description": "Wooden Goblet Product Cutout, handcrafted with traditional detailing. Visit our Hitech City showroom or enquire on WhatsApp for price and availability.",
+    "featured": false
+  }
+]

@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Admin | Crafty Korner India</title><link rel="icon" href="/images/favicon.png">
+<style>
+:root{--bg:#f3f1ec;--card:#fff;--ink:#1f1d1a;--walnut:#24392d;--walnut2:#2f4a3b;--gold:#2f5d43;--gold2:#a9cdb4;--line:#dedad0;--red:#8a2f25;--mut:#5b5851;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{overflow-x:hidden;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font:15px/1.5 var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);font-weight:500}
+[hidden]{display:none!important}
+button{font:inherit;cursor:pointer}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* buttons and inputs */
+input,select,textarea{font:inherit;font-size:16px;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:0;background:#fffdf6;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold2);border-color:var(--gold)}
+.pri{background:var(--walnut);color:#fff;border:1px solid var(--walnut);padding:9px 22px;font-weight:500;}
+.pri:hover{background:var(--gold);border-color:var(--gold)}
+.sec{background:transparent;border:1px solid var(--ink);padding:6px 16px;color:var(--ink);font-size:14px}
+.sec:hover{background:var(--walnut);color:#fff}
+.del{background:transparent;border:1px solid #c9a39b;color:var(--red);padding:6px 16px;font-size:14px}
+.del:hover{background:var(--red);border-color:var(--red);color:#fff}
+
+/* sign in */
+#login{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:20px;background:linear-gradient(rgba(10,16,12,.82),rgba(10,16,12,.88)),url(/images/hero.jpg) center/cover}
+.lc{background:var(--card);border:1px solid var(--gold);padding:32px 28px 28px;width:100%;max-width:360px;text-align:center;}
+.lc img{height:84px;margin:0 auto 12px;width:auto}
+.lc h1{font-size:24px}
+.lc p{color:var(--mut);margin:2px 0 18px}
+#err{color:var(--red);min-height:22px;margin:8px 0 4px;font-size:14px}
+
+/* layout */
+#app{display:flex;min-height:100vh;min-height:100dvh}
+aside{width:228px;flex:none;background:var(--walnut);color:#d9e3dc;padding:22px 16px;display:flex;flex-direction:column;gap:22px;position:sticky;top:0;height:100vh;height:100dvh;border-right:1px solid var(--line)}
+.brand{background:#fff;padding:8px;text-align:center}
+.brand img{height:68px;width:auto;margin:auto}
+nav{display:flex;flex-direction:column;gap:2px}
+nav button,.ab a,.ab button{background:none;border:0;color:#d9e3dc;text-align:left;padding:10px 12px;text-decoration:none;display:block;width:100%;font-size:15px}
+nav button{border-left:2px solid transparent}
+nav button:hover,.ab a:hover,.ab button:hover{background:#ffffff12;color:#fff}
+nav button.on{border-left-color:var(--gold2);background:#ffffff14;color:#fff}
+.ab{margin-top:auto;border-top:1px solid #ffffff24;padding-top:12px}
+.ab a,.ab button{font-size:14px;color:#b9c9be;padding:8px 12px}
+main{flex:1;min-width:0;padding:32px 36px 64px;max-width:1080px}
+.mh{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:22px}
+.mh .pri{white-space:nowrap;flex:none}
+.mh h1{font-size:30px;line-height:1.2}
+.mh p{color:var(--mut)}
+
+/* summary + search */
+#stats{display:flex;flex-wrap:wrap;margin-bottom:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.st{padding:12px 28px 12px 0;margin-right:28px;border-right:1px solid var(--line)}
+.st:last-child{border-right:0;margin-right:0}
+.st b{font:500 26px/1.1 var(--serif);margin-right:8px}
+.st span{color:var(--mut);font-size:14px}
+#q{margin-bottom:14px;max-width:340px}
+
+/* list rows */
+#grid{display:flex;flex-direction:column;border:1px solid var(--line);background:var(--card)}
+.row{display:flex;align-items:center;gap:16px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.th{width:60px;height:60px;flex:none;background:#e6d9bd;border:1px solid var(--line)}
+.th img{width:100%;height:100%;object-fit:cover}
+.nm{flex:1;min-width:0}
+.nm h3{font-size:17px;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.meta{color:var(--mut);font-size:13.5px;margin-top:2px;display:flex;flex-wrap:wrap;gap:0 14px}
+.badge{color:var(--gold);font-weight:600}
+.pr{min-width:110px;text-align:right;font:500 15px var(--sans);color:var(--ink)}
+.ac{display:flex;gap:8px;flex:none}
+.empty{padding:48px 20px;text-align:center;color:var(--mut)}
+
+/* custom request entries */
+.rq{align-items:flex-start;flex-wrap:wrap}
+.rq .ph{display:flex;gap:6px;flex-wrap:wrap}
+.rq .ph img{width:72px;height:72px;object-fit:cover;border:1px solid var(--line)}
+.rq .tx{flex:1;min-width:240px}
+.rq .tx h3{white-space:normal}
+.rq .tx p{margin:6px 0 0;font-size:14.5px}
+.rq .tx a{color:#1c6b43;font-weight:600;font-size:14px;display:inline-block;margin-top:8px}
+
+/* edit dialog */
+dialog{margin:auto;border:1px solid var(--gold);padding:0;width:min(720px,96vw);max-height:92vh;background:var(--card);color:var(--ink)}
+dialog::backdrop{background:#0a100ccc}
+dialog form{display:flex;flex-direction:column;max-height:92vh}
+.dh{background:var(--walnut);color:#fff;padding:16px 24px;font:500 21px var(--serif);border-bottom:1px solid var(--line)}
+.db{padding:6px 24px 18px;display:grid;gap:0 18px;grid-template-columns:1fr 1fr;overflow:auto}
+.db .w{grid-column:1/-1}
+.db label{display:block;font-size:13px;color:var(--mut);margin:14px 0 5px}
+.imgf{display:flex;gap:14px;align-items:flex-start}
+.pv{width:96px;height:96px;object-fit:cover;border:1px solid var(--line);background:#e6d9bd;flex:none}
+.imgf>div{flex:1;min-width:0;display:grid;gap:8px}
+.imgf input[type=file]{padding:7px 8px;font-size:14px}
+.chk{display:flex;gap:10px;align-items:center;margin-top:16px}
+.chk input{width:auto}
+.chk label{margin:0;font-size:14.5px;color:var(--ink)}
+.df{padding:12px 24px;border-top:1px solid var(--line);display:flex;gap:10px;justify-content:flex-end;background:var(--card)}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--walnut);color:#fff;border:1px solid var(--gold);padding:10px 22px;opacity:0;pointer-events:none;z-index:99;transition:opacity .2s}
+#toast.on{opacity:1}
+
+@media(max-width:820px){
+  #app{display:block}
+  aside{width:100%;height:auto;position:sticky;top:0;z-index:20;flex-direction:row;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:8px 14px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .brand{padding:3px 8px}.brand img{height:34px}
+  .ab{order:2;margin:0 0 0 auto;border:0;padding:0;display:flex;width:auto;gap:2px}
+  .ab a,.ab button{width:auto;white-space:nowrap;font-size:13px;padding:6px 8px}
+  nav{order:3;flex-direction:row;width:100%;overscroll-behavior-x:contain;overflow-x:auto;gap:0;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav button{white-space:nowrap;padding:10px 14px;width:auto;border-left:0;border-bottom:2px solid transparent;font-size:14.5px}
+  nav button.on{border-left:0;border-bottom-color:var(--gold2);background:none}
+  main{padding:20px 16px 56px}
+  .mh h1{font-size:24px}
+  #stats{margin-bottom:14px}
+  .st{padding:10px 12px 10px 0;margin-right:12px}.st b{font-size:21px;margin-right:6px}.st span{font-size:13px}
+  #q{max-width:none}
+  .row{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:4px 12px;padding:12px;align-items:center}
+  .th{width:52px;height:52px;grid-row:1/3}
+  .nm{grid-column:2/4}
+  .nm h3{white-space:normal;font-size:16px}
+  .pr{grid-column:2;grid-row:2;min-width:0;text-align:left;font-size:15px}
+  .ac{grid-column:3;grid-row:2}
+  .ac button{padding:5px 12px;font-size:13.5px}
+  .row.rq{display:flex;flex-wrap:wrap}
+  .rq .tx{min-width:0;flex-basis:100%}
+  dialog{width:100%;max-width:100%;max-height:100vh;max-height:100dvh;height:100vh;height:100dvh;border:0}
+  dialog form{height:100vh;height:100dvh;max-height:100vh;max-height:100dvh}
+  #login{place-items:start center;padding-top:12vh}
+  .db{grid-template-columns:1fr;padding:2px 16px 16px}
+  .dh,.df{padding-left:16px;padding-right:16px}
+}
+</style></head><body>
+<div id="login" hidden><form class="lc" id="lf"><img src="/images/logo.png" alt="Crafty Korner India"><h1>Admin panel</h1><p>Sign in to manage the website</p><input id="pw" type="password" placeholder="Password" autocomplete="current-password"><div id="err" role="alert"></div><button class="pri" style="width:100%">Sign in</button></form></div>
+<div id="app" hidden>
+<aside><div class="brand"><img src="/images/logo.png" alt="Crafty Korner India"></div>
+<nav id="nav"><button data-t="products">Products</button><button data-t="posts">Blog posts</button><button data-t="requests">Custom requests</button></nav>
+<div class="ab"><a href="/" target="_blank">View website</a><button id="xl">Download Excel</button><button id="out">Log out</button></div></aside>
+<main><div class="mh"><div><h1 id="ttl"></h1><p id="sub"></p></div><button class="pri" id="new">Add new</button></div><div id="stats"></div><input id="q" type="search" placeholder="Search" aria-label="Search"><div id="grid"></div></main></div>
+<dialog id="dlg"><form id="fm"><div class="dh" id="dt"></div><div class="db" id="df"></div><div class="df"><button type="button" class="sec" id="cx">Cancel</button><button class="pri">Save</button></div></form></dialog><div id="toast" role="status"></div>
+<script>
+const F={products:[['name','Product name','w'],['category','Collection','select'],['price','Price in ₹ (0 = price on request)','number'],['image','Image','img w'],['description','Description','area w'],['featured','Show on the home page','check w']],
+posts:[['title','Title','w'],['date','Date','date'],['tag','Tag (e.g. Care Guide)'],['image','Cover image','img w'],['keywords','SEO keywords (comma separated)','w'],['excerpt','Short summary (shown in Google results)','area w'],['content','Article. Leave a blank line between paragraphs; start a line with "## " for a heading.','area big w']]};
+const TT={products:['Products','Everything shown on your website'],posts:['Blog posts','Articles that bring visitors from Google'],requests:['Custom requests','Orders sent by customers']};
+let T=sessionStorage.t||'',tab='products',cats=[],items=[],cur=null;const $=s=>document.querySelector(s),e=s=>String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;'),inr=n=>Number(n)>0?'₹'+Number(n).toLocaleString('en-IN'):'Price on request';
+async function api(p,m='GET',b,raw){const r=await fetch('/api/'+p,{method:m,headers:{'x-token':T,...(raw?{}:{'Content-Type':'application/json'})},body:raw||(b&&JSON.stringify(b))});if(r.status===401&&T){T='';sessionStorage.t='';show()}return r.json()}
+function toast(m){const t=$('#toast');t.textContent=m;t.className='on';clearTimeout(toast.k);toast.k=setTimeout(()=>t.className='',2800)}
+function show(){$('#login').hidden=!!T;$('#app').hidden=!T;if(T)init()}
+async function init(){cats=(await api('site')).categories;load()}
+async function load(){document.querySelectorAll('#nav button').forEach(b=>b.className=b.dataset.t===tab?'on':'');$('#ttl').textContent=TT[tab][0];$('#sub').textContent=TT[tab][1];$('#new').hidden=tab==='requests';$('#q').value='';items=await api(tab);draw()}
+function draw(){const q=$('#q').value.toLowerCase(),cn=s=>(cats.find(c=>c.slug===s)||{}).name||s,L=items.map((x,i)=>[x,i]).filter(([x])=>JSON.stringify(x).toLowerCase().includes(q));
+$('#stats').innerHTML=tab==='products'?`<div class="st"><b>${items.length}</b><span>Products</span></div><div class="st"><b>${items.filter(x=>x.featured).length}</b><span>On home page</span></div><div class="st"><b>${new Set(items.map(x=>x.category)).size}</b><span>Collections</span></div>`:`<div class="st"><b>${items.length}</b><span>${TT[tab][0]}</span></div>`;
+$('#grid').innerHTML=L.map(([x,i])=>tab==='requests'?`<div class="row rq"><div class="ph">${(x.images||[x.image]).filter(Boolean).map(m=>`<a href="${e(m)}" target="_blank"><img src="${e(m)}" alt=""></a>`).join('')}</div><div class="tx"><h3>${e(x.name)}, ${e(x.phone)}</h3><div class="meta"><span>${e(x.date)}</span>${x.email?`<span>${e(x.email)}</span>`:''}${x.type?`<span>${e(x.type)}</span>`:''}</div>${x.details?`<p>${e(x.details)}</p>`:''}<p>${e(x.message)}</p><a href="https://wa.me/${e(String(x.phone).replace(/\D/g,''))}" target="_blank">Reply on WhatsApp</a></div><div class="ac"><button class="del" data-d="${i}">Delete</button></div></div>`:
+`<div class="row"><div class="th"><img src="${e(x.image)}" alt="" loading="lazy"></div><div class="nm"><h3>${e(x.name||x.title)}</h3><div class="meta">${tab==='products'?`<span>${e(cn(x.category))}</span>${x.featured?'<span class="badge">On home page</span>':''}`:`<span>${e(x.tag)}</span><span>${e(x.date)}</span>`}</div></div>${tab==='products'?`<div class="pr">${inr(x.price)}</div>`:''}<div class="ac"><button class="sec" data-e="${i}">Edit</button><button class="del" data-d="${i}">Delete</button></div></div>`).join('')||`<div class="empty">${tab==='requests'?'No custom requests yet. Orders sent from the website appear here.':q?'Nothing matches your search.':'Nothing here yet. Use Add new to create the first one.'}</div>`}
+function edit(x={}){cur=x;$('#dt').textContent=(x.id?'Edit ':'Add ')+(tab==='posts'?'blog post':'product');$('#df').innerHTML=F[tab].map(([k,l,t=''])=>{const v=x[k],w=t.includes('w')?' w':'';t=t.replace(' w','');return t==='check'?`<div class="chk${w}"><input type="checkbox" name="${k}" id="k_${k}" ${v?'checked':''}><label for="k_${k}">${l}</label></div>`:`<div class="${w.trim()}"><label>${l}</label>`+(t==='select'?`<select name="${k}">${cats.map(c=>`<option value="${c.slug}" ${c.slug===v?'selected':''}>${e(c.name)}</option>`).join('')}</select>`:t==='img'?`<div class="imgf"><img class="pv" src="${e(v)}" alt="" onerror="this.style.visibility='hidden'" onload="this.style.visibility='visible'"><div><input name="${k}" value="${e(v)}" placeholder="/images/photo.jpg"><input type="file" accept="image/*" data-up="${k}"></div></div>`:t.startsWith('area')?`<textarea name="${k}" rows="${t.includes('big')?12:3}">${e(v)}</textarea>`:`<input name="${k}" type="${t||'text'}" value="${e(v)}" ${k==='name'||k==='title'?'required':''} ${t==='number'?'min="0" step="any"':''}>`)+'</div>'}).join('');
+$('#df').querySelectorAll('[data-up]').forEach(f=>f.onchange=async()=>{toast('Uploading…');const r=await api('upload?name='+encodeURIComponent(f.files[0].name),'POST',null,f.files[0]);if(r.path){f.form.elements[f.dataset.up].value=r.path;f.closest('.imgf').querySelector('.pv').src=r.path;toast('Photo uploaded')}else toast(r.error)});
+$('#df').querySelectorAll('input[name=image]').forEach(i=>i.oninput=()=>i.closest('.imgf').querySelector('.pv').src=i.value);$('#dlg').showModal()}
+$('#fm').onsubmit=async ev=>{ev.preventDefault();const o={...cur};F[tab].forEach(([k,,t=''])=>{const el=ev.target.elements[k];o[k]=t.includes('check')?el.checked:t.includes('number')?Number(el.value||0):el.value});const r=await api(tab,'POST',o);$('#dlg').close();toast(r.error||'Saved. Excel updated.');load()};
+$('#cx').onclick=()=>$('#dlg').close();$('#new').onclick=()=>edit();$('#q').oninput=draw;
+$('#grid').onclick=async ev=>{const b=ev.target;if(b.dataset.e!=null)edit(items[b.dataset.e]);if(b.dataset.d!=null&&confirm('Delete this item? It will also be removed from the Excel file.')){await api(tab+'/'+items[b.dataset.d].id,'DELETE');toast('Deleted. Excel updated.');load()}};
+$('#nav').onclick=ev=>{if(ev.target.dataset.t){tab=ev.target.dataset.t;load()}};
+$('#lf').onsubmit=async ev=>{ev.preventDefault();const r=await api('login','POST',{password:$('#pw').value});if(r.token){T=r.token;sessionStorage.t=T;show()}else $('#err').textContent=r.error};
+$('#out').onclick=()=>{T='';sessionStorage.t='';show()};
+$('#xl').onclick=async()=>{const r=await fetch('/api/export',{headers:{'x-token':T}});if(!r.ok)return toast('Could not download');const a=document.createElement('a');a.href=URL.createObjectURL(await r.blob());a.download='crafty-korner-data.xlsx';a.click()};
+show();
+</script></body></html>

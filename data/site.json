@@ -1,0 +1,66 @@
+{
+  "name": "Crafty Korner India",
+  "url": "https://www.yourdomain.com",
+  "tagline": "Antique Furniture & Indian Handicrafts",
+  "phone": "+91 84391 36097",
+  "whatsapp": "918439136097",
+  "address": "Shilparamam, Hitech City, Hyderabad, Telangana – 500081",
+  "hours": "10:00 AM – 8:00 PM (Monday – Sunday)",
+  "hero": "/images/hero.jpg",
+  "story": "/images/traditional-wooden-wall-shelf-display.jpg",
+  "categories": [
+    {
+      "name": "Antique Furniture",
+      "slug": "antique-furniture",
+      "image": "/images/antique-brass-cup-on-wooden-table.jpg"
+    },
+    {
+      "name": "Traditional Wooden Furniture",
+      "slug": "wooden-furniture",
+      "image": "/images/carved-wooden-coffee-table-set.jpg"
+    },
+    {
+      "name": "Brass & Metal Items",
+      "slug": "brass-metal",
+      "image": "/images/antique-brass-cup-on-wooden-table.jpg"
+    },
+    {
+      "name": "Handicrafts",
+      "slug": "handicrafts",
+      "image": "/images/antique-wooden-tray-stack-01.jpg"
+    },
+    {
+      "name": "Home Décor",
+      "slug": "home-decor",
+      "image": "/images/carved-wooden-panels-01.jpg"
+    },
+    {
+      "name": "Vintage Collectibles",
+      "slug": "vintage",
+      "image": "/images/antique-brass-cup-on-wooden-table.jpg"
+    },
+    {
+      "name": "Custom-made Furniture",
+      "slug": "custom",
+      "image": "/images/antique-brass-cup-on-wooden-table.jpg"
+    }
+  ],
+  "custom": "/images/carved-wooden-console-table-02.jpg",
+  "customSteps": [
+    {
+      "title": "Share your inspiration",
+      "text": "Send a photo, sketch or reference of the piece you imagine.",
+      "image": "/images/custom-step-1.jpg"
+    },
+    {
+      "title": "Our artisan crafts it",
+      "text": "Our craftsmen carve, join and finish it by hand.",
+      "image": "/images/custom-step-2.jpg"
+    },
+    {
+      "title": "Receive your furniture",
+      "text": "We check, pack and deliver your finished piece.",
+      "image": "/images/custom-step-3.jpg"
+    }
+  ]
+}
